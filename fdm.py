@@ -4,7 +4,7 @@ import plotly.express as px
 
 
 # finite difference method
-class finite_difference_method:
+class FiniteDifferenceMethod:
 
     def __init__(self, start, end, iteration, order_derivative_number, function):
         self.x = [i for i in np.arange(start, end, iteration)]
@@ -56,7 +56,7 @@ iteration = 0.1
 order_derivative_number = 1'''
 
 # 2. create model
-'''f = finite_difference_method(start, end, iteration, order_derivative_number, function)'''
+'''f = FiniteDifferenceMethod(start, end, iteration, order_derivative_number, function)'''
 
 # show data (if needed)
 '''data = f.fdm()'''
